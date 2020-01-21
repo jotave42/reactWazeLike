@@ -35,7 +35,7 @@ module.exports = {
                 location
             })
         
-            return respsone.json( { dev_created : dev_created, data: api_response.data } );
+            return respsone.json( dev_created );
         } else {
             return respsone.json( {"ERROR": "user already exists"});
         }    
